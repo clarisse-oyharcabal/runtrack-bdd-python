@@ -31,3 +31,48 @@ Les étapes principales comprennent :
 6. Requêtes SQL : Calculer des valeurs à partir des données existantes (superficie des étages, capacité totale des salles) et afficher les résultats dans la console.
 
 L'objectif global est de maîtriser l’utilisation de MySQL avec Python pour gérer des bases de données relationnelles et effectuer des opérations de lecture, insertion et calcul via des requêtes SQL intégrées dans un programme Python.
+
+## JOUR 3
+### Dashboard de Gestion de Stock
+
+#### Description
+Ce projet est un **Dashboard de Gestion de Stock** construit avec **Streamlit** et connecté à une base de données **MySQL**. Il permet aux utilisateurs de gérer les produits d'un magasin, avec des fonctionnalités telles que la consultation, l'ajout, la modification, la suppression des produits, ainsi que l'exportation des données produits au format CSV et la visualisation des catégories de produits à travers un graphique.
+
+#### Fonctionnalités
+
+##### 1. **Afficher les Produits**
+   - Afficher une liste de tous les produits ou les filtrer par catégorie.
+   - Chaque produit montre son nom, description, prix, quantité et ID de catégorie.
+   - Possibilité de supprimer un produit.
+
+##### 2. **Ajouter un Produit**
+   - Formulaire pour entrer le nom, la description, le prix, la quantité et l'ID de catégorie du produit.
+   - Bouton pour ajouter le produit à la base de données.
+
+##### 3. **Modifier un Produit**
+   - Sélectionner un produit par son ID pour le modifier.
+   - Modifier le nom, la description, le prix, la quantité et l'ID de catégorie du produit.
+   - Mettre à jour les informations dans la base de données.
+
+##### 4. **Supprimer un Produit**
+   - Supprimer un produit de la base de données en utilisant son ID.
+
+##### 5. **Exporter les Produits en CSV**
+   - Télécharger la liste de tous les produits sous forme de fichier CSV pour une utilisation hors ligne.
+
+##### 6. **Graphique des Catégories de Produits**
+   - Afficher un graphique à barres montrant le nombre de produits dans chaque catégorie.
+
+#### Prérequis
+
+- Python 3.x
+- Streamlit
+- Connecteur MySQL pour Python
+- Matplotlib
+
+#### Installation
+
+1. Installer les dépendances :
+   ```bash
+   pip install streamlit mysql-connector-python matplotlib
+

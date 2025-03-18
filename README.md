@@ -75,4 +75,14 @@ Ce projet est un **Dashboard de Gestion de Stock** construit avec **Streamlit** 
 1. Installer les dépendances :
    ```bash
    pip install streamlit mysql-connector-python matplotlib
+   
+2. Configurer une base de données MySQL avec une base store et une table product. Vous pouvez modifier les paramètres de connexion à la base de données dans la fonction get_db_connection.
 
+3. Lancer l'application Streamlit :
+   ```bash
+   streamlit run app.py
+
+#### Utilisation
+Lancez l'application Streamlit et utilisez la barre latérale pour naviguer entre les différentes options.
+Vous pouvez afficher les produits, ajouter de nouveaux produits, modifier des produits existants ou les supprimer.
+Exportez les données des produits au format CSV ou visualisez un graphique affichant la répartition des produits par catégorie.
